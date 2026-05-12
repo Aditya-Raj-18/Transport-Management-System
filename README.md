@@ -1,84 +1,55 @@
-# Transport Management System
+﻿# Transport Management System
 
-A browser-based Transport Management System built with HTML, CSS, and JavaScript. The project manages local Dehradun transport routes, vehicles, drivers, trips, passenger bookings, tickets, payments, notifications, and reports.
+A browser-based Transport Management System project using Dehradun route and location data.
+
+## Included Location Data
+
+- Routes covering ISBT, Railway Station, Clock Tower, Rajpur Road, Sahastradhara, Jolly Grant Airport, Prem Nagar, Clement Town, Raipur, Jakhan, Mussoorie, and Forest Research Institute
+- Local vehicle records with Uttarakhand registration numbers
+- Driver records and route assignments
+- Scheduled city, airport, tourist, and foothill trips
+- Fare, distance, stop, payment, notification, booking, and report modules
 
 ## Features
 
 - Customer signup and login
 - Admin login
-- Driver login
+- Driver login using credentials created by admin
 - Role-based dashboards
-- Admin dashboard for transport operations
-- Customer dashboard for bookings and schedules
-- Driver dashboard for assigned trips
-- Vehicle management
-- Driver management
-- Route management
-- Trip scheduling
-- Dehradun route and location data
-- Booking date selector
-- Schedule date filter
-- Future trip rotation
-- Seat availability tracking
-- Seat selection while booking
-- Pickup and destination selection
-- Passenger ticket view with PNR details
+- Home page after login for customer, driver, and admin
+- Booking date selector that shows buses available on the selected date
+- Schedule date filter for checking bus availability by date
+- Recurring trip rotation for future dates
+- Vehicle, driver, route, and trip management
+- Vehicle-driver assignment and reassignment
+- Route search by route name or stop
+- Seat availability tracking before booking
+- Customer booking and cancellation
+- Cancellation confirmation before refund status update
+- Seat selection during booking
+- Route-based pickup and destination selection
+- Passenger ticket view with PNR, vehicle, driver, route, seat, and fare details
 - Ticket download as a text file
-- Customer booking history
-- Booking cancellation with refund status
-- Payment records
-- Notification logs
+- Customer-specific booking history privacy
+- Payment records and notification logs
 - Reports dashboard
-- Filtered reports by date range and bus
-- LocalStorage-based data persistence
-- Works without server or database installation
+- Filtered downloadable reports by date range and bus
+- Refreshed transport theme with scenic visuals
 
-## Tech Stack
+## Default Login Accounts
 
-- HTML
-- CSS
-- JavaScript
-- Browser LocalStorage
+- Admin: `admin@tms.local` / `Admin@123`
+- Passenger: `passenger@tms.local` / `Passenger@123`
+- Driver: `DDN-D001` / `Driver@123`
 
-## Project Structure
+## Run
 
-```text
-Transport Management System/
-├── index.html
-├── app.js
-├── styles.css
-└── README.md
+Open `index.html` in a web browser.
 
-Default Login Accounts
-Admin
-Email: admin@tms.local
-Password: Admin@123
-Passenger
-Email: passenger@tms.local
-Password: Passenger@123
-Driver
-Driver ID: DDN-D001
-Password: Driver@123
-Included Transport Data
-The app includes sample data for:
+The app stores records in browser localStorage, so it works without installing a server or database.
 
-Dehradun city routes
-ISBT
-Railway Station
-Clock Tower
-Rajpur Road
-Sahastradhara
-Jolly Grant Airport
-Prem Nagar
-Clement Town
-Raipur
-Jakhan
-Mussoorie
-Forest Research Institute
-Uttarakhand vehicle numbers
-Driver records
-Scheduled trips
-Fare and distance records
-How to Run
-Clone the repository:
-git clone https://github
+
+
+
+
+
